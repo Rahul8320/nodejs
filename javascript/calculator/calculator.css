@@ -1,0 +1,24 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(35, 31, 31);
+    color: rgb(233, 230, 230);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.main {
+    justify-content: center;
+    text-align: center;
+}
+
+#heading {
+    font-size: 40px;
+    font-weight: bold;
+    padding: 10px;
+}
+
+#textbox {
+    font-size: 40px;
+    font-family: cursive;
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event Propagation Demo</title>
+    <style>
+      #outerDiv {
+        width: 200px;
+        height: 200px;
+        background-color: red;
+        padding: 10px;
+        margin: 10px;
+      }
+      #inner {
+        width: 100px;
+        height: 100px;
+        background-color: blueviolet;
+        padding: 10px;
+        margin: 10px;
+      }
+      #para {
+        color: aqua;
+        font-size: 30px;
+        font-weight: bold;
+        padding: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="outerDiv">
+      <div id="inner">
+        <p id="para">box</p>
+      </div>
+    </div>
+    <script>
+      var inner = document.getElementById("inner");
+      var outer = document.getElementById("outerDiv");
+      inner.addEventListener("click", () => {
+        inner.style.backgroundColor = "green";
+      });
+      outer.addEventListener("click", () => {
+        outer.style.backgroundColor = "blue";
+      });
+    </script>
+  </body>
+</html>
